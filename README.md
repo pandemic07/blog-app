@@ -44,7 +44,7 @@ The project is organized as follows:
          $ virtalenv env_name
          $ source path/bin/activate   eg. source /home/your_name/Environments/env_name/bin/activate
 
-## Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have the following requirements installed:
 

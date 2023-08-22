@@ -58,7 +58,7 @@ Before you begin, ensure you have the following requirements installed:
 
 ## Authentication
 
-JWT (JSON Web Token) authentication is implemented for user login and logout. Tokens are generated using the pyjwt library.
+JWT (JSON Web Token) authentication is implemented for user login and logout. Tokens are generated using the pyjwt library.It doesn't uses any * __3rd party library__ *
 
 ## Models
 
@@ -76,13 +76,15 @@ Updated At: Timestamp indicating when the comment was last updated.
 
 ## API Endpoints
 
-POST /api/auth/login: User login endpoint to obtain JWT token.
-POST /api/auth/logout: User logout endpoint.
-POST /api/blog/posts/: Create a new blog post.
-POST /api/blog/posts/{post_id}/comments/: Create a comment on a blog post.
-GET /api/blog/posts/: List all blog posts.
-GET /api/blog/posts/{post_id}/comments/: List all comments on a specific blog post.
-PUT /api/blog/posts/{post_id}/: Update a blog post (only by the author).
+- POST /api/register/: User login endpoint to obtain JWT token.
+- POST /api/login/: User login endpoint to obtain JWT token.
+- POST /api/logout/: User logout endpoint.
+- POST /api/create-blog-post/: Create a new blog post.
+- POST /api/posts/{post_id}/comments/: Create a comment on a blog post.
+- GET /api/list-blog-posts/: List all blog posts.
+- GET /api/comments/{post_id}: List all comments on a specific blog post.
+- PATCH, PUT /api/posts/{post_id}/: Perform update on a blog post.
+
 
 
 ## Usage 
@@ -94,3 +96,4 @@ To start the development server, run:
 Access the Django admin panel at http://localhost:8000/admin/ to manage users, blog posts, and comments.
 
 Refer to the API documentation  for detailed API usage instructions.
+  [API documentation](https://documenter.getpostman.com/view/26013106/2s9Y5U1Qv6)

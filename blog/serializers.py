@@ -13,3 +13,9 @@ class BlogPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = BlogPost
         fields = '__all__'
+
+class UpdateBlogPostSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BlogPost
+        fields = ('title', 'content', 'updated_at')
+        read_only_fields = ('author', 'created_at')

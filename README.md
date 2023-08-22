@@ -46,6 +46,7 @@ The project is organized as follows:
 
 ### Prerequisites
 
+
 Before you begin, ensure you have the following requirements installed:
 
         (env)$ pip install -r requirements.txt
@@ -57,9 +58,13 @@ Before you begin, ensure you have the following requirements installed:
 
 
 ### Authentication
+
+
 JWT (JSON Web Token) authentication is implemented for user login and logout. Tokens are generated using the pyjwt library.
 
 ### Models
+
+
   ### Blog Post
 Title: The title of the blog post.
 Content: The content of the blog post.
@@ -82,6 +87,8 @@ PUT /api/blog/posts/{post_id}/: Update a blog post (only by the author).
 
 
 ### Usage
+
+
 To start the development server, run:
 
     $ python manage.py runserver

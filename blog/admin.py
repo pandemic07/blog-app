@@ -1,4 +1,3 @@
-# blog/admin.py
 from django.contrib import admin
 from .models import BlogPost,Comment
 
@@ -9,7 +8,6 @@ class BlogPostAdmin(admin.ModelAdmin):
     ordering = ('-created_at',)
     date_hierarchy = 'created_at'
 
-# Register the BlogPost model with the custom BlogPostAdmin
 admin.site.register(BlogPost, BlogPostAdmin)
 
 class CommentAdmin(admin.ModelAdmin):
@@ -18,7 +16,6 @@ class CommentAdmin(admin.ModelAdmin):
     search_fields = ('content',)
     ordering = ('-created_at',)
 
-# Register the Comment model with the customized CommentAdmin
 admin.site.register(Comment, CommentAdmin)
 
 

@@ -9,8 +9,8 @@ This is a Django project with two apps, 'blog' and 'users', designed to create a
 ## Table of Contents
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Prerequisites](#prerequisites)
 - [Authentication](#authentication)
 - [Models](#models)
 - [API Endpoints](#api-endpoints)
@@ -44,8 +44,7 @@ The project is organized as follows:
          $ virtalenv env_name
          $ source path/bin/activate   eg. source /home/your_name/Environments/env_name/bin/activate
 
-### Prerequisites
-
+## Prerequisites
 
 Before you begin, ensure you have the following requirements installed:
 
@@ -57,13 +56,11 @@ Before you begin, ensure you have the following requirements installed:
 
 
 
-### Authentication
-
+## Authentication
 
 JWT (JSON Web Token) authentication is implemented for user login and logout. Tokens are generated using the pyjwt library.
 
-### Models
-
+## Models
 
   ### Blog Post
 Title: The title of the blog post.
@@ -76,7 +73,9 @@ Content: The content of the comment.
 Author: The user who authored the comment.
 Created At: Timestamp indicating when the comment was created.
 Updated At: Timestamp indicating when the comment was last updated.
-### API Endpoints
+
+## API Endpoints
+
 POST /api/auth/login: User login endpoint to obtain JWT token.
 POST /api/auth/logout: User logout endpoint.
 POST /api/blog/posts/: Create a new blog post.
@@ -86,8 +85,7 @@ GET /api/blog/posts/{post_id}/comments/: List all comments on a specific blog po
 PUT /api/blog/posts/{post_id}/: Update a blog post (only by the author).
 
 
-### Usage
-
+## Usage 
 
 To start the development server, run:
 

@@ -83,7 +83,7 @@ Updated At: Timestamp indicating when the comment was last updated.
 - POST /api/posts/{post_id}/comments/: Create a comment on a blog post.
 - GET /api/list-blog-posts/: List all blog posts.
 - GET /api/comments/{post_id}: List all comments on a specific blog post.
-- PATCH, PUT /api/posts/{post_id}/: Perform update on a blog post.
+- PATCH, PUT /api/update-blog-post/{post_id}/: Perform update on a blog post.
 
 
 
